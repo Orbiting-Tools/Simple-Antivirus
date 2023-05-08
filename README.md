@@ -3,3 +3,6 @@
 
 ### A very simple antivirus, ment to repair, windows in diferant ways... has a nice little GUI and is very usefull.
 ### Adding more updates soon
+
+
+## Download from here: https://github.com/CPScript/Simple-AV/releases/tag/version1
