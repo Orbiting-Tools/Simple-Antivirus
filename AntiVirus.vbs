@@ -6,7 +6,7 @@ answer = MsgBox("For some of this software to run properly you will need to inst
 
 If answer = vbYes Then
   WScript.sleep(5)
-  CreateObject("WScript.Shell").Run "simple\extras\python-3.11.0.exe"
+  CreateObject("WScript.Shell").Run "simple\extras\python.exe"
   a=MsgBox("Please close this prompt to move onto the next step.", 0+64, "Simple AV")
   
 Else
