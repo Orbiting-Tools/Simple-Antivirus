@@ -21,8 +21,8 @@ def check_file_location(filename):
     file_path = os.path.join(current_dir, "fontdrvhost.exe")
     file_path = os.path.join(current_dir, "Ravbg64.exe")
     if os.path.exists(file_path):
-        return True
         print("Window's most common files have been cheacked and are in their correct place, please close this prompt.")
+        return True
     else:
         return False
         print("Scan has come back bad, please open 'Suspicious.log' to view suspicious files")
