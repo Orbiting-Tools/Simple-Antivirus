@@ -1,3 +1,6 @@
+# Note: Doesn't work atm #
+##########################
+
 import os
 
 def check_file_location(filename):
