@@ -30,6 +30,7 @@ If answer = vbYes Then
     CreateObject("WScript.Shell").Run "simple\TaskManager.py"
     WScript.sleep(500)
     d=MsgBox("Succesefull, close this prompt.", 0+64, "Simple")
+    WScript.sleep(2999)
     CreateObject("WScript.Shell").Run "simple\fix.bat"
     f=MsgBox("Close this prompt to run our antivirus.", 0+64, "Simple")
     CreateObject("WScript.Shell").Run "simple\complex\setup.exe"
