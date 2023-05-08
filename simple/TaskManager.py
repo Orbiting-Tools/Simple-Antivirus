@@ -25,8 +25,4 @@ def check_file_location(filename):
         return True
     else:
         return False
-        print("Scan has come back bad, please open 'Suspicious.log' to view suspicious files")
-
-def log_malicious_task(task):
-    with open("Suspicious.log", "a") as f:
-        f.write(f"File: '{task.name}' is not in system 32, it has been marked as suspicious.\n")
+        print("Scan has come back.. some files have been marked as suspicious... our antivirus will fix that, please close this prompt.")
